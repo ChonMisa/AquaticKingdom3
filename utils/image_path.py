@@ -3,7 +3,7 @@ def fish_upload(instance, filename):
 
 
 def accessories(instance, filename):
-    return f'accessor_images/{instance.id}/{filename}'
+    return f'accessory_images/{instance.id}/{filename}'
 
 
 def upload_avatar_for_user(instance, filename):
