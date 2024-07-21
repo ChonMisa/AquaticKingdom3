@@ -1,8 +1,16 @@
+from uuid import uuid4
+
+
 def fish_upload(instance, filename):
     return f'fish_images/{instance.fish.id}/{filename}'
 
 
+# def accessories(instance, filename):
+#     return f'accessory_images/{instance.id}/{filename}'
+
 def accessories(instance, filename):
+    ext = filename.split('.')[-1]
+    filename = f"{uuid4().hex}.{ext}"
     return f'accessory_images/{instance.id}/{filename}'
 
 
