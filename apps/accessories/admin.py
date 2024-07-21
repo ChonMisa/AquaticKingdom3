@@ -20,3 +20,4 @@ class AccessoryAdmin(admin.ModelAdmin):
     search_fields = ['title']
     prepopulated_fields = {'slug': ('title',)}
     list_per_page = 100
+    inlines = [AccessoryImageInline]

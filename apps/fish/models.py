@@ -22,6 +22,8 @@ class Fish(models.Model):
     )
     stock = models.PositiveIntegerField(
         default=0,
+        blank=True,
+        null=True
     )
     restock_date = models.DateTimeField(
         null=True,
